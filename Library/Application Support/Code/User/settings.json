@@ -1,0 +1,229 @@
+{
+  // Startup
+  "workbench.startupEditor": "none",
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.iconTheme": "material-icon-theme",
+  "security.workspace.trust.untrustedFiles": "open",
+  // Layout
+  "workbench.sideBar.location": "left",
+  "workbench.panel.defaultLocation": "right",
+  "workbench.activityBar.visible": true,
+  "workbench.editor.wrapTabs": true,
+  "editor.fontFamily": "JetBrains Mono", // Cool fonts: 'Dank Mono', 'JetBrains Mono' or 'SF Mono'
+  "editor.fontSize": 14,
+  "editor.letterSpacing": 0.4,
+  "editor.lineHeight": 1.7,
+  // "terminal.integrated.fontFamily": "JetBrains Mono",
+  "terminal.integrated.fontSize": 14,
+  "editor.fontLigatures": true,
+
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/.hg/store/**": true
+  },
+
+  // Files
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json",
+    ".babelrc": "json"
+  },
+  // "files.exclude": {
+  //   "**/.git": true,
+  //   "**/.svn": true,
+  //   "**/.hg": true,
+  //   "**/CVS": true,
+  //   "**/.DS_Store": true,
+  //   "node_modules": true
+  // },
+
+  // Good settings for recording tutorials
+  "editor.quickSuggestions": false,
+  "editor.mouseWheelZoom": true,
+  "editor.renderLineHighlight": "gutter",
+  "breadcrumbs.enabled": true,
+  "explorer.compactFolders": false,
+  // "window.menuBarVisibility": "toggle", // Only for Linux
+
+  // General render settings
+  "editor.rulers": [80, 120],
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  // Helps focusing
+  "editor.highlightActiveIndentGuide": false,
+  // Option to render unwanted spaces
+  "editor.renderWhitespace": "trailing", // I was used to 'boundary'
+
+  // Editor behavior
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.selectionClipboard": false, // Only for Linux
+  "editor.cursorSurroundingLines": 8,
+  // Actions on save
+  // "editor.formatOnSave": false,
+  // "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  // Auto imports
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  // Auto update import on move
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  // Suggestions
+  "editor.suggestSelection": "first",
+
+  // Explorer Behavior
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  // "explorer.autoReveal": false,
+
+  // Accessibilityj
+  "editor.accessibilitySupport": "on",
+
+  // -----------------------------
+  // Plugins
+  // -----------------------------
+
+  // ESLint configuration
+  "eslint.packageManager": "yarn",
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // Prettier (based on Standard styleguide)
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "none",
+  "prettier.arrowParens": "avoid",
+  "prettier.endOfLine": "lf",
+
+  // Emmet
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx", // Defines auto closing tags in JSX
+    "typescript": "tsx"
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+
+  // Git integration settings
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.autorefresh": true,
+
+  // Recommendation settings
+  "extensions.ignoreRecommendations": false, // Do not ignore recommendations
+
+  // Colorize Extension settings
+  "colorize.languages": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "html",
+    "css",
+    "sass",
+    "less",
+    "scss",
+    "postcss",
+    "sss",
+    "stylus",
+    "svg",
+    "xml"
+  ],
+
+  // Prettier Extension
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // Fix for Github Copilot
+    "editor.autoClosingBrackets": "languageDefined"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // Fix for Github Copilot
+    "editor.autoClosingBrackets": "languageDefined"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // Fix for Github Copilot
+    "editor.autoClosingBrackets": "languageDefined"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // Fix for Github Copilot
+    "editor.autoClosingBrackets": "languageDefined"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+
+  // Tabnine Extension
+  "tabnine.experimentalAutoImports": true,
+
+  // Github Copilot Extension
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": false
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // Java Extensions
+  "redhat.telemetry.enabled": false,
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "java.maven.downloadSources": true,
+  "java.signatureHelp.enabled": true,
+
+  // C/C++ Extension
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.intelliSenseMode": "clang-x64",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+
+  // clangd (the alternative) Extension
+  "clangd.path": "/Users/guilhermerodz/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/13.0.0/clangd_13.0.0/bin/clangd",
+  "workbench.colorTheme": "Night Owl",
+
+  // Vim Extension
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  // Rust Extension
+  "rust-client.engine": "rust-analyzer",
+}
