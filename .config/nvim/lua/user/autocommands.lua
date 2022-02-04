@@ -30,9 +30,10 @@ vim.cmd([[
   augroup end
 ]])
 
+-- TODO: Move this to copilot separate file
 vim.cmd([[
   imap <silent><script><expr> <C-G> copilot#Accept("\<CR>")
-  "let g:copilot_no_tab_map = v:true
+  let g:copilot_no_tab_map = v:true
 ]])
 
 -- Autoformat

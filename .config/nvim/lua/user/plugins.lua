@@ -55,7 +55,7 @@ return packer.startup(function(use)
   use "ahmedkhalf/project.nvim"
   -- use "lewis6991/impatient.nvim"
   use "blackCauldron7/surround.nvim"
-  use "lukas-reineke/indent-blankline.nvim"
+  -- use "lukas-reineke/indent-blankline.nvim"
   use "windwp/nvim-ts-autotag"
   -- use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
@@ -64,6 +64,7 @@ return packer.startup(function(use)
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
   use "lunarvim/darkplus.nvim"
+  use "tiagovla/tokyodark.nvim"
   use "ellisonleao/gruvbox.nvim"
   -- use "sainnhe/gruvbox-material"
   use {"metalelf0/jellybeans-nvim",requires="rktjmp/lush.nvim"}

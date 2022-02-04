@@ -42,7 +42,6 @@ end
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
-
 nvim_tree.setup {
   disable_netrw = true,
   hijack_netrw = true,
@@ -55,7 +54,7 @@ nvim_tree.setup {
   auto_close = false, -- Will remain as `false` while a bug isn't fixed https://github.com/kyazdani42/nvim-tree.lua/issues/894
   open_on_tab = false,
   hijack_cursor = false,
-  update_cwd = true,
+  update_cwd = false,
   update_to_buf_dir = {
     enable = true,
     auto_open = true,
@@ -117,3 +116,9 @@ nvim_tree.setup {
   disable_window_picker = 0,
   root_folder_modifier = ":t",
 }
+
+vim.cmd [[
+  augroup _nvimtree_personal
+    autocmd FocusGained,BufEnter,CursorHold,CursorHoldI nvimtree :NvimTreeRefresh
+  augroup _nvimtree_personal
+]]
