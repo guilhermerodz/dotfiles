@@ -46,6 +46,8 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
+vim.cmd [[ set fillchars=eob:\ ]] -- Removes the tilde (~) from the empty lines
+
 -- Feature to detect file changes in disk and then reloading the buffer.
 -- Option 1: Using  `noautoread`
 -- vim.cmd [[
