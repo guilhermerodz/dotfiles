@@ -119,6 +119,6 @@ nvim_tree.setup {
 
 vim.cmd [[
   augroup _nvimtree_personal
-    autocmd FocusGained,BufEnter,CursorHold,CursorHoldI nvimtree :NvimTreeRefresh
+    autocmd FocusGained,BufEnter,CursorHold,CursorHoldI NvimTree :NvimTreeRefresh
   augroup _nvimtree_personal
 ]]
