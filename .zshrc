@@ -157,7 +157,7 @@ SPACESHIP_GIT_STATUS_SHOW=false
 # Personal Dotfiles Manager
 # ----------------------------------------
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias dotfiles='cd ~/www/guilhermerodz/.dotfiles; echo "Just entered $(pwd) \nType the following command to return \n\t$ cd -"'
 alias dfiles="dotfiles"
 alias dfl="dotfiles"
 
