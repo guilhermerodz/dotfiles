@@ -67,6 +67,9 @@ set shortmess+=Am
 " Hide buffers instead of abandoning windows
 set hidden
 
+" Allow system clipboard
+set clipboard=unnamedplus
+
 "---------------------------------
 " Keybindings
 "---------------------------------
