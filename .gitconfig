@@ -1,6 +1,6 @@
 [user]
 	name = Guilherme Rodz
-	email = guilherme.rodrigues.profissional@gmail.com
+	email = gui.rodz.dev@gmail.com
 
 [alias]
 	p = push
@@ -20,6 +20,8 @@
 	s = status -sb
 	sh = show --name-only
 	l = log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30
+	l-e = log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %C(cyan)<%ae>%Creset %s' --max-count=30
+	l-g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
 	# List incoming & outgoing commits (compares to remote)
 	incoming = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' ..@{u})
@@ -32,6 +34,15 @@
 	# Undo the last commit but keep changes
 	rollback = reset --soft HEAD~1
 
+  # Advanced - "Change Commits"j
+  # To change the author name:
+  # git change-commits GIT_AUTHOR_NAME "old name" "new name"
+  # To change the email for only the last 10 commits:
+  # git change-commits GIT_AUTHOR_EMAIL "old@email.com" "new@email.com" HEAD~10..HEAD
+  # source: https://stackoverflow.com/a/11768843
+	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f"
+	change-commits-f = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch -f --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f"
+
 [pull]
 	# Fast=forward without creating new commits
 	ff = only
@@ -40,5 +51,13 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+
 [init]
 	defaultBranch = master
+
+[includeIf "gitdir:~/www/work/reaktor/"] # Include for all .git projects under folder
+  path = ~/.gitconfig-reaktor-internal
+
+[core]
+	editor = vim
+  pager = "less -N"

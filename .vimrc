@@ -68,7 +68,7 @@ set shortmess+=Am
 set hidden
 
 " Allow system clipboard
-set clipboard=unnamedplus
+" set clipboard=unnamedplus
 
 "---------------------------------
 " Keybindings
