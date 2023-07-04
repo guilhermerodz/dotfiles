@@ -1,0 +1,98 @@
+{
+	"language": "default",
+	"theme": "custom",
+	"customLanguages": [
+		{
+			"id": "custom",
+			"displayName": "Custom",
+			"dictionary": {
+				"default": "Default",
+				"language": "Language",
+				"topLeft": "Top left",
+				"topRight": "Top right",
+				"bottomLeft": "Bottom left",
+				"bottomRight": "Bottom right",
+				"small": "Small",
+				"large": "Large",
+				"settings": "Settings",
+				"themes": "Themes",
+				"windowSize": "Window Size",
+				"screenEdge": "Screen Edge",
+				"display": "Display",
+				"videoInputSource": "Video Input Source",
+				"close": "Close",
+				"loading": "Camera loading",
+				"connected": "Camera connected",
+				"disconnected": "Camera disconnected",
+				"notFound": "Camera not found"
+			}
+		}
+	],
+	"customThemes": [
+		{
+			"id": "custom",
+			"displayName": "Custom",
+			"textColor": "#fff",
+			"borderColor": "linear-gradient(to right, #988BC7, #FF79C6)",
+			"borderWidth": "0px"
+		}
+	],
+	"themeOverrides": {
+		"textColor": null,
+		"borderWidth": null
+	},
+	"hasShadow": true,
+	"camera": {
+		"width": 1920,
+		"height": 1080,
+		"frameRate": 60
+	},
+	"anchor": {
+		"x": 0,
+		"y": 0
+	},
+	"shortcuts": {
+		"moveCamera": {
+			"up": "Shift+Alt+CommandOrControl+Up",
+			"down": "Shift+Alt+CommandOrControl+Down",
+			"left": "Shift+Alt+CommandOrControl+Left",
+			"right": "Shift+Alt+Comm2andOrControl+Right"
+		},
+		"resizeCamera": {
+			"toggle": "Shift+Alt+CommandOrControl+1"
+		},
+		"hideCamera": "Shift+Alt+CommandOrControl+2",
+		"openPreferencesFile": "CommandOrControl+,",
+		"adjustCameraOffset": {
+			"left": "ArrowLeft",
+			"right": "ArrowRight",
+			"up": "ArrowUp",
+			"down": "ArrowDown"
+		},
+		"flipHorizontal": "/",
+		"toggleCam": "Backspace",
+		"toggleWindowSize": "Space",
+		"toggleShapes": "o",
+		"reset": "r",
+		"zoom": {
+			"in": "=",
+			"out": "-"
+		}
+	},
+	"shapes": [
+		"polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+		"circle(50% at 50% 50%)"
+	],
+	"screen": {
+		"initial": {
+			"width": 450,
+			"height": 450
+		},
+		"large": {
+			"width": 1920,
+			"height": 1080
+		}
+	},
+	"zoom": 1,
+	"flipHorizontal": true
+}
