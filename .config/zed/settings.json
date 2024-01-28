@@ -1,0 +1,9 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// from the command palette or from `Zed` application menu.
+{
+  "theme": "Summercamp",
+  "vim_mode": true,
+  "relative_line_numbers": true
+}
